@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report an Item | UCA Lost & Found</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="top-bar">UNIVERSITY FOR THE CREATIVE ARTS | FARNHAM CAMPUS</div>
+
+    <header class="navbar">
+        <a href="index.html" class="logo">UCA LOST & FOUND</a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="browse.html">Browse Items</a>
+            <a href="report.html" class="active">Report an Item</a>
+            <a href="my-reports.html">My Reports</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <a href="login.html" class="nav-login" id="navAuthLink">Login</a>
+    </header>
+
+    <main class="form-page">
+        <section class="page-heading">
+            <p class="eyebrow">HELP THE UCA COMMUNITY</p>
+            <h1>Report an Item</h1>
+            <p>Tell us about something you've lost or found on the Farnham campus.</p>
+        </section>
+
+        <form id="reportForm" class="main-form">
+            <label for="reportStatus">What would you like to report?</label>
+            <select id="reportStatus" required>
+                <option value="">Choose one</option>
+                <option value="Lost">I have lost an item</option>
+                <option value="Found">I have found an item</option>
+            </select>
+
+            <label for="itemName">Item name</label>
+            <input id="itemName" type="text" placeholder="e.g. Black backpack" required>
+
+            <label for="itemCategory">Category</label>
+            <select id="itemCategory" required>
+                <option value="">Choose a category</option>
+                <option>Electronics</option>
+                <option>Clothing</option>
+                <option>Bags</option>
+                <option>Books & Stationery</option>
+                <option>ID Cards</option>
+                <option>Other</option>
+            </select>
+
+            <label for="itemDescription">Description</label>
+            <textarea id="itemDescription" rows="5" placeholder="Describe the item, including its colour, brand or other identifying features..." required></textarea>
+
+            <label for="itemLocation">Location</label>
+            <select id="itemLocation" required>
+                <option value="">Where was it lost or found?</option>
+                <option>Library</option>
+                <option>Canteen</option>
+                <option>Reception</option>
+                <option>Classroom</option>
+                <option>Studio</option>
+                <option>IT Department</option>
+                <option>Other</option>
+            </select>
+
+            <label for="roomDetails">Room number or additional location details (optional)</label>
+            <input id="roomDetails" type="text" placeholder="e.g. Room G.12">
+
+            <label for="itemDate">Date lost or found</label>
+            <input id="itemDate" type="date" required>
+
+            <label for="itemImage">Upload an image (optional)</label>
+            <input id="itemImage" type="file" accept="image/*">
+            <small>Image files only. Maximum size: 1 MB.</small>
+
+            <label for="reporterName">Your name</label>
+            <input id="reporterName" type="text" placeholder="Your name" required>
+
+            <label for="reporterEmail">Your UCA email</label>
+            <input id="reporterEmail" type="email" placeholder="Your email address" required>
+
+            <button type="submit" class="primary-button">Submit Report</button>
+            <p id="reportMessage" class="form-message" role="status"></p>
+        </form>
+    </main>
+
+    <footer class="footer">
+        <p>UCA Lost & Found | Farnham Campus</p>
+        <p>Helping the UCA community reunite with their belongings.</p>
+    </footer>
+</body>
+</html>

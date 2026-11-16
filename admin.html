@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administration | UCA Lost & Found</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="top-bar">UNIVERSITY FOR THE CREATIVE ARTS | FARNHAM CAMPUS</div>
+
+    <header class="navbar">
+        <a href="index.html" class="logo">UCA LOST & FOUND</a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="browse.html">Browse Items</a>
+            <a href="report.html">Report an Item</a>
+            <a href="my-reports.html">My Reports</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <button id="logoutButton" class="nav-login">Log out</button>
+    </header>
+
+    <main class="content-page">
+        <section class="page-heading">
+            <p class="eyebrow">STAFF AREA · DEMONSTRATION</p>
+            <h1>Administration Dashboard</h1>
+            <p>Review and manage lost and found reports for the Farnham campus.</p>
+        </section>
+
+        <p class="demo-notice">
+            Demonstration dashboard only. It does not provide secure staff access or connect to UCA systems.
+        </p>
+
+        <div class="dashboard-summary">
+            <div class="summary-card">
+                <span>All Reports</span>
+                <strong id="adminTotal">0</strong>
+            </div>
+            <div class="summary-card">
+                <span>Lost Items</span>
+                <strong id="adminLost">0</strong>
+            </div>
+            <div class="summary-card">
+                <span>Found Items</span>
+                <strong id="adminFound">0</strong>
+            </div>
+            <div class="summary-card">
+                <span>Returned</span>
+                <strong id="adminReturned">0</strong>
+            </div>
+        </div>
+
+        <section class="admin-section">
+            <h2>Manage Reports</h2>
+            <div id="adminReports" class="report-list"></div>
+            <p id="adminEmpty" class="no-results" hidden>No reports have been submitted yet.</p>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>UCA Lost & Found | Administration Demonstration</p>
+    </footer>
+</body>
+</html>

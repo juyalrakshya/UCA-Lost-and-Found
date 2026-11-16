@@ -1,0 +1,338 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>UCA Lost & Found | Farnham Campus</title>
+
+    <meta name="description"
+        content="UCA Farnham Lost and Found Platform. Find your lost belongings or report an item.">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- TOP INFORMATION BAR -->
+    <div class="top-bar">
+        <div class="container top-content">
+            <span>UNIVERSITY FOR THE CREATIVE ARTS</span>
+            <span>FARNHAM CAMPUS</span>
+        </div>
+    </div>
+
+
+    <!-- NAVIGATION -->
+    <header class="header">
+
+        <div class="container navbar">
+
+            <a href="index.html" class="logo">
+                <span class="logo-symbol">UCA</span>
+
+                <span class="logo-text">
+                    UCA LOST & FOUND
+                    <small>FARNHAM CAMPUS</small>
+                </span>
+            </a>
+
+
+            <nav class="nav-links" id="navLinks">
+
+                <a href="index.html" class="active">Home</a>
+
+                <a href="browse.html">Browse Items</a>
+
+                <a href="report.html">Report an Item</a>
+
+                <a href="my-reports.html">My Reports</a>
+
+                <a href="contact.html">Contact</a>
+
+            </nav>
+
+
+            <div class="nav-buttons">
+
+                <a href="login.html" class="login-btn" id="navAuthLink">
+                    Sign In
+                </a>
+
+                <a href="report.html" class="report-btn">
+                    + Report Item
+                </a>
+
+            </div>
+
+
+            <button class="menu-toggle" id="menuToggle"
+                aria-label="Toggle navigation">
+                ☰
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- HERO SECTION -->
+    <section class="hero hero-centred">
+
+    <div class="hero-content">
+
+        <p class="hero-eyebrow"><h1><span> UCA FARNHAM CAMPUS · LOST & FOUND</span></h1></p>
+
+        <h1>
+            LOST SOMETHING?
+            <span>LET'S FIND IT TOGETHER.</span>
+        </h1>
+
+        <p class="hero-description">
+            Lost your belongings on campus, or found something
+            that belongs to someone else? Help reunite the UCA
+            community with their missing items.
+        </p>
+
+        <form id="homeSearch" class="hero-search">
+            <input
+                type="text"
+                id="homeSearchInput"
+                placeholder="Search for a lost or found item..."
+                aria-label="Search for an item"
+            >
+            <button type="submit">SEARCH ↗</button>
+        </form>
+
+        <div class="hero-actions">
+            <a href="browse.html" class="hero-button hero-button-yellow">
+                Browse Items
+            </a>
+
+            <a href="report.html" class="hero-button hero-button-outline">
+                Report an Item
+            </a>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+        <!-- STATISTICS -->
+        <section class="statistics">
+
+            <div class="container stats-container">
+
+                <div class="stat-card">
+                    <h2 id="totalItems">0</h2>
+                    <p>Total Items Listed</p>
+                </div>
+
+                <div class="stat-card">
+                    <h2 id="foundItems">0</h2>
+                    <p>Found Items</p>
+                </div>
+
+                <div class="stat-card">
+                    <h2 id="returnedItems">0</h2>
+                    <p>Items Returned</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+       
+<!-- RECENTLY FOUND ITEMS -->
+<section class="home-section">
+
+    <div class="home-section-heading">
+        <span class="home-section-label">CAMPUS LOST & FOUND</span>
+
+        <h2>Recently Found Items</h2>
+
+        <p>
+            Explore items recently reported around UCA Farnham.
+        </p>
+    </div>
+
+    <div id="recentItems" class="home-items-grid">
+        <!-- Items are loaded automatically by JavaScript -->
+    </div>
+
+    <div class="home-section-action">
+        <a href="browse.html" class="primary-button">
+            Explore All Items →
+        </a>
+    </div>
+
+</section>
+
+
+
+       
+<!-- HOW IT WORKS -->
+<section class="home-section how-section">
+
+    <div class="home-section-heading">
+        <span class="home-section-label">SIMPLE & EASY</span>
+
+        <h2>How It Works</h2>
+
+        <p>
+            Helping students and campus teams reconnect with lost belongings.
+        </p>
+    </div>
+
+    <div class="how-grid">
+
+        <article class="how-card">
+            <span class="how-number">01</span>
+            <div class="how-icon">📝</div>
+            <h3>Report an Item</h3>
+            <p>
+                Lost something or found an item on campus?
+                Submit a report with its details and location.
+            </p>
+        </article>
+
+        <article class="how-card">
+            <span class="how-number">02</span>
+            <div class="how-icon">🔎</div>
+            <h3>Browse & Search</h3>
+            <p>
+                Explore reported belongings and search using
+                item names, categories and campus locations.
+            </p>
+        </article>
+
+        <article class="how-card">
+            <span class="how-number">03</span>
+            <div class="how-icon">🤝</div>
+            <h3>Reconnect</h3>
+            <p>
+                Contact the reporter and coordinate with the
+                relevant campus team to recover your belongings.
+            </p>
+        </article>
+
+    </div>
+
+</section>
+
+    </main>
+
+<section class="homepage-contact">
+
+    <div class="homepage-contact-heading">
+        <p class="hero-eyebrow">NEED SOME HELP?</p>
+        <h2>Get in Touch with UCA Farnham</h2>
+        <p>
+            For help with lost property, collection points or
+            campus enquiries, contact the relevant team.
+        </p>
+    </div>
+
+    <div class="homepage-contact-grid">
+
+        <article class="homepage-contact-card">
+            <span class="contact-number">01</span>
+            <h3>Library / Campus Life</h3>
+            <p>Farnham Campus Life team, located in the Library.</p>
+            <a href="tel:+441252892709">01252 892709</a>
+            <a href="mailto:CampusLifeFarnham@uca.ac.uk">
+                CampusLifeFarnham@uca.ac.uk
+            </a>
+        </article>
+
+        <article class="homepage-contact-card">
+            <span class="contact-number">02</span>
+            <h3>Reception / Campus</h3>
+            <p>General Farnham campus enquiries.</p>
+            <a href="tel:+441252722441">01252 722441</a>
+            <span>General campus telephone</span>
+        </article>
+
+        <article class="homepage-contact-card">
+            <span class="contact-number">03</span>
+            <h3>Student IT Support</h3>
+            <p>For student technology and IT support enquiries.</p>
+            <a href="tel:+441252918504">01252 918504</a>
+            <a href="mailto:studentITsupport@uca.ac.uk">
+                studentITsupport@uca.ac.uk
+            </a>
+        </article>
+
+    </div>
+
+    <div class="homepage-official-link">
+        <p>UNIVERSITY FOR THE CREATIVE ARTS</p>
+        <a href="https://www.uca.ac.uk/campuses/farnham/"
+           target="_blank" rel="noopener noreferrer">
+            Visit the Official UCA Farnham Website ↗
+        </a>
+    </div>
+
+</section>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="container footer-content">
+
+            <div>
+                <h3>UCA LOST & FOUND</h3>
+
+                <p>
+                    Connecting the UCA Farnham community
+                    with their lost belongings.
+                </p>
+            </div>
+
+
+            <div>
+                <h4>Explore</h4>
+
+                <a href="browse.html">Browse Items</a>
+
+                <a href="report.html">Report an Item</a>
+
+                <a href="my-reports.html">My Reports</a>
+            </div>
+
+
+            <div>
+                <h4>Support</h4>
+
+                <a href="contact.html">Contact</a>
+
+                <a href="login.html">Administration Login</a>
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+            <p>
+                University For The Creative Arts Farnham | Lost & Found Platform
+            </p>
+        </div>
+
+    </footer>
+
+</body>
+</html>

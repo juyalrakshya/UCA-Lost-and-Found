@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse Items | UCA Lost & Found</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <div class="top-bar">
+        UNIVERSITY FOR THE CREATIVE ARTS | FARNHAM CAMPUS
+    </div>
+
+    <header class="navbar">
+        <a href="index.html" class="logo">UCA LOST & FOUND</a>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="browse.html" class="active">Browse Items</a>
+            <a href="report.html">Report an Item</a>
+            <a href="my-reports.html">My Reports</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <a href="login.html" class="nav-login">Login</a>
+    </header>
+
+    <main class="browse-page">
+
+        <section class="page-heading">
+            <p class="eyebrow">FARNHAM CAMPUS</p>
+            <h1>Browse Lost & Found Items</h1>
+            <p>Search for your missing belongings or help someone find theirs.</p>
+        </section>
+
+        <section class="browse-controls">
+
+            <input
+                type="text"
+                id="browseSearch"
+                placeholder="Search for an item..."
+            >
+
+            <select id="categoryFilter">
+                <option value="all">All Categories</option>
+                <option value="Electronics">Electronics</option>
+                <option value="Clothing">Clothing</option>
+                <option value="Bags">Bags</option>
+                <option value="Books & Stationery">Books & Stationery</option>
+                <option value="ID Cards">ID Cards</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <select id="locationFilter">
+                <option value="all">All Locations</option>
+                <option value="Library">Library</option>
+                <option value="Canteen">Canteen</option>
+                <option value="Reception">Reception</option>
+                <option value="Classroom">Classroom</option>
+                <option value="Studio">Studio</option>
+                <option value="IT Department">IT Department</option>
+                <option value="Other">Other</option>
+            </select>
+
+        </section>
+
+        <section class="browse-tabs">
+            <button class="filter-tab active" data-status="all">All Items</button>
+            <button class="filter-tab" data-status="Lost">Lost Items</button>
+            <button class="filter-tab" data-status="Found">Found Items</button>
+        </section>
+
+        <section class="browse-results">
+            <div class="results-heading">
+                <h2>Available Reports</h2>
+                <span id="resultsCount">0 items</span>
+            </div>
+
+            <div id="browseItems" class="items-grid"></div>
+
+            <p id="noResults" class="no-results" hidden>
+                No items found. Try changing your search or filters.
+            </p>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>UCA Lost & Found | Farnham Campus</p>
+        <p>Helping the UCA community reunite with their belongings.</p>
+    </footer>
+
+</body>
+</html>

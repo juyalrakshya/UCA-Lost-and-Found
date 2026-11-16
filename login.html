@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | UCA Lost & Found</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="top-bar">UNIVERSITY FOR THE CREATIVE ARTS | FARNHAM CAMPUS</div>
+
+    <header class="navbar">
+        <a href="index.html" class="logo">UCA LOST & FOUND</a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="browse.html">Browse Items</a>
+            <a href="report.html">Report an Item</a>
+            <a href="my-reports.html">My Reports</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main class="login-page">
+        <form id="loginForm" class="main-form">
+            <p class="eyebrow">WELCOME BACK</p>
+            <h1>Access your account</h1>
+            <p class="muted">Choose a demonstration role to explore the website.</p>
+
+            <label for="loginName">Your name</label>
+            <input id="loginName" type="text" placeholder="Enter your name" required>
+
+            <label for="loginEmail">Email address</label>
+            <input id="loginEmail" type="email" placeholder="Enter your email" required>
+
+            <label for="loginRole">Select your role</label>
+            <select id="loginRole" required>
+                <option value="student">Student</option>
+                <option value="admin">Administration demo</option>
+            </select>
+
+            <button type="submit" class="primary-button">Continue</button>
+            <p id="loginMessage" class="form-message" role="status"></p>
+
+            <p class="demo-notice">
+                Demo only: this role selector is not connected to UCA authentication.
+            </p>
+        </form>
+    </main>
+
+    <footer class="footer">
+        <p>UCA Lost & Found | Farnham Campus</p>
+    </footer>
+</body>
+</html>

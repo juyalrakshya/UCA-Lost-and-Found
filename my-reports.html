@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Reports | UCA Lost & Found</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="top-bar">UNIVERSITY FOR THE CREATIVE ARTS | FARNHAM CAMPUS</div>
+
+    <header class="navbar">
+        <a href="index.html" class="logo">UCA LOST & FOUND</a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="browse.html">Browse Items</a>
+            <a href="report.html">Report an Item</a>
+            <a href="my-reports.html" class="active">My Reports</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <a href="login.html" class="nav-login">Login</a>
+    </header>
+
+    <main class="content-page">
+        <section class="page-heading">
+            <p class="eyebrow">YOUR ACTIVITY</p>
+            <h1>My Reports</h1>
+            <p>Keep track of the lost and found items you have reported.</p>
+        </section>
+
+        <div class="dashboard-summary">
+            <div class="summary-card">
+                <span>Total Reports</span>
+                <strong id="myTotal">0</strong>
+            </div>
+            <div class="summary-card">
+                <span>Open Reports</span>
+                <strong id="myOpen">0</strong>
+            </div>
+            <div class="summary-card">
+                <span>Returned Items</span>
+                <strong id="myReturned">0</strong>
+            </div>
+        </div>
+
+        <div id="myReportsList" class="report-list"></div>
+
+        <p id="myReportsEmpty" class="no-results" hidden>
+            You haven't submitted any reports yet.
+            <a href="report.html">Report an item</a>
+        </p>
+    </main>
+
+    <footer class="footer">
+        <p>UCA Lost & Found | Farnham Campus</p>
+    </footer>
+</body>
+</html>
